@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta charset="utf8">
+	<title>Document</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+	<link href="public/css/splide.min.css" rel="stylesheet">
+	<link href="public/css/custom.css" rel="stylesheet">
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg bg-black text-light fixed-top">
+			<div class="container-fluid">
+					<a class="navbar-brand text-success" href="index.html">RETFLIX</a>
+					<form class="d-flex" role="search" action="busqueda.html" autocomplete="off">
+					<input id="txtSearch" name="search"  class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+					<button class="btn btn-outline-success" type="submit">Search</button>
+				</form>
+			</div>
+		</nav>
+	<div class="container cmt-6">
+		<div class="row">
+			<div class="col">
+				<h3 class="text-white text-center" id="txtName">Nombre</h3>
+			</div>
+		</div>
+		<br>
+		<div class="row justify-content-center">
+			<div class="col-3">
+				<img id="imgPoster" class="w100" src="" alt="">
+			</div>
+			<div class="col-6 text-white align-bottom">
+				<p class="m-0"><b class="text-success">Titulo original:</b> <span id="txtOriginalTitle"></span></p>
+				<p class="m-0"><b class="text-success">Lenguaje original:</b> <span id="txtOriginalLanguage"></span></p>
+				<p class="m-0"><b class="text-success">País:</b> <span id="txtCountry"></span></p>
+				<p class="m-0"><b class="text-success">Fecha de estreno:</b> <span id="txtReleaseDate"></span></p>
+				<p class="m-0"><b class="text-success">Duración:</b> <span id="txtRunTime"></span></p>
+				<p class="m-0 text-justify"><b class="text-success">Descripción:</b> <span id="txtOverview"></span></p>
+				<p class="m-0"><b class="text-success">Géneros:</b> <div id="txtGenres"></div></p>
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col">
+				<h4 class="text-white text-center">Cast</h4>
+			</div>
+		</div>
+		<br>
+		<div class="row" id="dgCast"></div>
+		<br>
+		<div class="row">
+			<div class="col">
+				<h4 class="text-white text-center">Productoras</h4>
+			</div>
+		</div>
+		<br>
+		<div class="row justify-content-center" id="dgSponsors"></div>
+		<br>
+		<br>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+	<script src="public/js/splide.min.js"></script>
+	<script src="public/js/detalle.js">
+
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+/*.splide-item {
+	width: 200px;
+	height: 400px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: black;
+}*/
+body{
+	background: black;
+}
+.splide{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#imgPoster, #imgBack{
+	width: 100%;
+	border: solid #198754 1px;
+	border-radius: 5px;
+}
+
+#txtSearch{
+	background-color: black;
+	border-color: #198754;
+	box-shadow: 0 0 0;
+	color: white;
+}
+
+*:focus {
+    outline: none!important;
+}
+.cmt-6{
+	margin-top: 4rem!important;
+}
